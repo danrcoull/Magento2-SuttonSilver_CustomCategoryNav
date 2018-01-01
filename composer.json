@@ -1,0 +1,21 @@
+{
+    "name": "suttonsilver/module-customcategorynav",
+    "description": "",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "d.coull@suttonsilver.co.uk",
+            "name": "Daniel Coull "
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "SuttonSilver\\CustomCategoryNav\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

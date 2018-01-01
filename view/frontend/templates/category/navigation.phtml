@@ -1,0 +1,36 @@
+<?php
+/**
+ * @var $block \SuttonSilver\CustomCategoryNav\Block\Category\Navigation
+ */
+
+?>
+<div class="category-nav">
+<div class="row">
+
+    <div class="text-center large-12">
+	<?php $collection =  $block->getLoadedCategoryList() ?>
+        <?php foreach ($collection as $cat) : ?>
+            <div class="pull-left">
+                <a href="<?= $cat->getUrl(); ?>" title="<?= $cat->getName(); ?>">
+                    <span><?= $cat->getName(); ?></span>
+                </a>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>
+<div class="row go-back">
+<?php
+$current = $this->getCurrentCategory();
+if($current->getLevel() > 2) :?>
+
+        <div class="pull-left">
+            <?php $parent =  $current->getParentCategory();?>
+            <a href="<?= $parent->getUrl(); ?>"><?= __('Back To '); ?><?= $parent->getName(); ?> </a>
+        </div>
+
+<?php endif; ?>
+<div class="pull-left">
+    <span class="underline"><?= $current->getProductCount();?> <?= $current->getName(); ?></span>
+</div>
+</div>
+</div>

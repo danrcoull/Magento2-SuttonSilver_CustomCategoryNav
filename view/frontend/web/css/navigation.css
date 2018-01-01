@@ -1,0 +1,35 @@
+.category-nav .row {
+    width:100%;
+    float:left;;
+    cleaR:both;
+    margin-left:-15px;
+    margin-right:-15px;
+}
+.category-nav .pull-left {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 1px grey;
+    margin: 5px;
+    border-radius: 3px;
+    color: grey;
+    font-weight: bold;
+}
+
+.category-nav .pull-left  a {
+    color: grey;
+}
+
+.category-nav .row .text-center {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.category-nav .go-back {
+    margin-top:30px;
+    margin-bottom:20px;
+}

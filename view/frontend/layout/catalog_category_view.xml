@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+		<!-- for css file -->
+		<css src="SuttonSilver_CustomCategoryNav::css/navigation.css"/>
+	</head>
+	<body>
+
+		<referenceContainer name="content">
+			<referenceBlock name="catalog.leftnav" remove="true" />
+			<block class="SuttonSilver\CustomCategoryNav\Block\Category\Navigation" before="category.products" name="category.navigation" template="SuttonSilver_CustomCategoryNav::category/navigation.phtml"/>
+		</referenceContainer>
+	</body>
+</page>
